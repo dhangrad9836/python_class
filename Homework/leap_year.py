@@ -9,3 +9,19 @@
 # Ask user to enter a year to determine if it's a leap year
 year_entered = int(input('Enter a year to find out if it\'s a leap year: '))
 
+# validate if the year is divisible by 100
+if((year_entered % 100) == 0):
+    # validate if the year is divisible by 400
+    if((year_entered % 400) == 0):
+        # if both checks are true then it's a leap year with 29 days
+        print(f'February of {year_entered} has 29 days in it')
+    else:
+        # if not divisible by 400 then that year has 28 days
+        print(f'February of {year_entered} has 28 days in it')
+# validate if the year is not divisible by 100 but divisible by 4
+elif((year_entered % 4) == 0):
+    # if divisible by 4 then that year is a leap year with 29 days
+    print(f'February of {year_entered} has 29 days in it')
+else:
+    # if not divisible by 4 then that year has 28 days
+    print(f'February of {year_entered} has 28 days in it')
