@@ -3,9 +3,9 @@ calculate_two_numbers = 'y'
 
 # Have user input two numbers to calculate the sum to the two numbers
 while calculate_two_numbers == 'y':
-    # users input for value_one
+    # user input for value_one
     value_one = int(input('Enter your first number: '))
-    # users input for value_two
+    # user input for value_two
     value_two = int(input('Enter your second number: '))
 
     #perform the addition of the two inputed numbers
