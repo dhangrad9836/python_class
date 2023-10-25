@@ -5,10 +5,10 @@
 # and the range as it's decreasing as the denominator
 
 # Define an incrementing number outside of the loop
-# that will increase everytime the loop runs
+# that will increase inside everytime the loop runs
 number_to_increase = 0
 
-# define a total variable to keep the sum of the calculation
+# define a variable named total to keep the sum of the calculation
 # everytime the loop iterates
 total = 0
 
