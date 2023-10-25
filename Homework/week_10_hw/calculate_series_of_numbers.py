@@ -4,21 +4,21 @@
 # the same loop and then you can use the number that is increasing as the numerator
 # and the range as it's decreasing as the denominator
 
-# Define an incrementing number outside of the loop
+# Define an variable for the numerator outside of the loop
 # that will increase inside everytime the loop runs
-number_to_increase = 0
+numerator = 0
 
 # define a variable named total to keep the sum of the calculation
-# everytime the loop iterates
+# inside everytime the loop iterates
 total = 0
 
 # define a for loop with range of numbers that decreases from 30 to 1
 for denominator in range(30, 0, -1):
     # this number will be used to calculate for the increasing numerator
-    number_to_increase += 1
+    numerator += 1
 
     # perform the calculation
-    total += (number_to_increase / denominator)
+    total += (numerator / denominator)
     #print(total)
 
 # print the running total of the calculation

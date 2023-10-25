@@ -15,6 +15,7 @@ while factorial_number < 0:
 total = 1
 # use for loop to calculate the factorial of users input
 for number in range(factorial_number):
+    # calculate the factorial and store it in the total variable
     total *= (number + 1)
     #print(total)
 print(total)

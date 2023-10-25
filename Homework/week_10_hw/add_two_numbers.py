@@ -1,8 +1,9 @@
 # Variable to control the loop
 calculate_two_numbers = 'y'
 
-# Have user input two numbers to calculate the sum to the two numbers
-while calculate_two_numbers == 'y':
+# While loop to validate if user would like to continue operation
+while calculate_two_numbers == 'y' or calculate_two_numbers == 'Y':
+    # Have user input two numbers to calculate the sum to the two numbers
     # user input for value_one
     value_one = int(input('Enter your first number: '))
     # user input for value_two

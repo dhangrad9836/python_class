@@ -7,9 +7,16 @@
 
 # Have user enter the speed of the vehicle
 vehicle_speed = int(input('What is the speed of the vehicle in mph? '))
+while vehicle_speed <= 0:
+    print('Vehicle speed should be greater than zero.')
+    vehicle_speed = int(input('Please re-enter the speed of the vehicle in mph? '))
+
 
 # Have user enter how many hours it traveled
 total_hours_traveled = int(input('How many hours has it traveled? '))
+while total_hours_traveled <= 0:
+    print('Total hours should be greater than zero.')
+    total_hours_traveled = int(input('Please re-enter the total number of hours traveled? '))
 
 # initialize a distance variable to calculate the distance for each hour traveled
 distance = 0
