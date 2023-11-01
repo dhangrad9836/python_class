@@ -1,4 +1,4 @@
-# This program displays a trianble pattern.
+# This program displays a triangle pattern.
 BASE_SIZE = 8
 
 for r in range(BASE_SIZE):

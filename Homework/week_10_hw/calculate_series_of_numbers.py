@@ -17,7 +17,8 @@ for denominator in range(30, 0, -1):
     # this number will be used to calculate for the increasing numerator
     numerator += 1
 
-    # perform the calculation
+    # perform the calculation as the numerator increases the denominator decreases
+    # and after each loop the fraction is added and stored in the running total variable
     total += (numerator / denominator)
     #print(total)
 
