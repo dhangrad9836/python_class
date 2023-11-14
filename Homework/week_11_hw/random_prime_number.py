@@ -1,3 +1,5 @@
+# question 2
+
 import random
 
 def random_gen():

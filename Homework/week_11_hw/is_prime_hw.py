@@ -10,17 +10,16 @@ def is_prime(num):
 
 
 def main():
-
+    z=0
     prime_number_checker = input("Enter a number to check if it's prime: ")
     while prime_number_checker != '0':
         for i in prime_number_checker:
             if ord(i) not in range(48,58):
                 print("Not a number:")
-                prime_number_checker = input("Enter a valid number: ")
+                #prime_number_checker = input("Enter a valid number: ")
             else:
-                pass
-        print(is_prime(int(prime_number_checker)))
+                z= is_prime(int(i))
+        print(z)
         prime_number_checker = input("Enter another number or enter 0 to quit: ")
 
 main()
-
