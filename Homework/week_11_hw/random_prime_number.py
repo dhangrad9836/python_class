@@ -19,6 +19,7 @@ def is_prime(num):
 def main():
     # have user enter how many number to generate
     userInput = int(input("Enter how many numbers to check if prime: "))
+
     for i in range(userInput):
         num = random_gen()
         print(f'{num} is {is_prime(num)}')
