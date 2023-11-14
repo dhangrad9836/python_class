@@ -21,20 +21,23 @@ def main():
     # the random numbers will be checked to see if they are prime or not
     userInput = input(("Enter a number to generate that many random numbers.\n"
                  "The program will validate if those numbers are prime or not."))
+    while userInput != '0':
 
-    for num in userInput:
-        if ord(num) not in range(48, 58):
-            print("Not a number")
-            break
-        else:
-            pass
+        for num in userInput:
+            if ord(num) not in range(48, 58):
+                print("Not a number")
+                break
+            else:
+                pass
 
-        if num == '0':
-            break
-        else:
-            num = int(num)
-            for i in range(num):
-                rand_num = random_gen()
-                print(f'{rand_num} is {is_prime(rand_num)}')
+            if num == '0':
+                break
+            else:
+                num = int(num)
+                for i in range(num):
+                    rand_num = random_gen()
+                    print(f'{rand_num} is {is_prime(rand_num)}')
+
+                userInput = input(("Enter another number to try again or 0 to quit: "))
 
 main()

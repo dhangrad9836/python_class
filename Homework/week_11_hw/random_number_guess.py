@@ -17,8 +17,10 @@ def check_guess(user_guess_number):
     while user_guess_number != random_number:
         if user_guess_number > random_number:
             print("Too high, try again")
+            break
         elif user_guess_number < random_number:
             print("Too low, try again")
+            break
         count += 1
     if user_guess_number == random_number:
             print(f'You guess the correct number after {count} guesses')
