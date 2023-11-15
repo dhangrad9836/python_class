@@ -29,12 +29,14 @@ def main():
             else:
                 pass
 
+        #pass/convert original user_input as int
         int_num = int(user_input)
         added_value = add(subsetsum, int_num)
         subsetsum = added_value
         print(subsetsum)
         if subsetsum == 0:
             print('Total is zero')
+            break
         else:
 
             user_input = input(f'Enter a number between -10 through 10\n '

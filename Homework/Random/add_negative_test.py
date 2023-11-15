@@ -41,6 +41,7 @@ def main():
         print(subsetsum)
         if subsetsum == 0:
             print('Total is zero')
+            break
         else:
 
             user_input = input(f'Enter a number between -10 through 10\n '
