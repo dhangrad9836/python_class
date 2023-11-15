@@ -19,7 +19,6 @@ def check_guess(user_num, rand_num):
             print('Too low')
             y = int((input('Try again:')))
             count += 1
-            #check_guess(user_num, rand_num)
         elif y == x:
             return f'You guessed correctly'
 
@@ -44,5 +43,7 @@ def main():
             rand_num = random_gen()
             guess_checker = check_guess(user_num, rand_num)
         print(f'{guess_checker}')
+
+
 
 main()
