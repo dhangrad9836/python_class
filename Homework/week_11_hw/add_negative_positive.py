@@ -10,17 +10,18 @@
 #subsetsum = 0
 # add function that adds user inputs
 def add(total, user_input):
-    return total + user_input
+    add_total = total + user_input
+    return add_total
 
 
 subsetsum = 0
 def main():
     global subsetsum
 
-    user_input = input(f'Enter a number between -10 through 10:\n '
-                       f'Or enter N to quit')
+    user_input = input(f'Enter a number between -10 through 10\n '
+                       f'Or enter 000 to quit: ')
 
-    while user_input != 'n' or user_input !='N':
+    while user_input != '000':
         for num in user_input:
             if ord(num) not in range(48, 58):
                 print("Not a number")
@@ -30,14 +31,22 @@ def main():
 
         int_num = int(num)
         added_value = add(subsetsum, int_num)
-        #update the subsetsum total
         subsetsum = added_value
-        #check if subsetsum is zero
+        #print(added_value)
         if subsetsum == 0:
-            print(f'The total is zero')
+            print('Total is zero')
         else:
-            pass
-        user_input = input(f'Enter a number between -10 through 10:\n '
-                           f'Or enter N to quit')
+
+            user_input = input(f'Enter a number between -10 through 10\n '
+                               f'Or enter 000 to quit: ')
+        #update the subsetsum total
+        # subsetsum = added_value
+        # #check if subsetsum is zero
+        # if subsetsum == 0:
+        #     print(f'The total is zero')
+        # else:
+        #     pass
+        # user_input = input(f'Enter a number between -10 through 10\n '
+        #                    f'Or enter N to quit: ')
 # call main function
 main()
