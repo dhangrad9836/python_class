@@ -36,19 +36,12 @@ def main():
         print(subsetsum)
         if subsetsum == 0:
             print('Total is zero')
-            break
+            pass
         else:
+            pass
 
             user_input = input(f'Enter a number between -10 through 10\n '
-                               f'Or enter 000 to quit: ')
-        #update the subsetsum total
-        # subsetsum = added_value
-        # #check if subsetsum is zero
-        # if subsetsum == 0:
-        #     print(f'The total is zero')
-        # else:
-        #     pass
-        # user_input = input(f'Enter a number between -10 through 10\n '
-        #                    f'Or enter N to quit: ')
+                                f'Or enter 000 to quit: ')
+
 # call main function
 main()
